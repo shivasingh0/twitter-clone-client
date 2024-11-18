@@ -1,11 +1,11 @@
 "use client";
 
 import { CredentialResponse, GoogleLogin } from "@react-oauth/google";
-import React from "react";
+import React, { useCallback } from "react";
 
 const GoogleLoginButton: React.FC = () => {
 
-  const handleGoogleLogin = (cred: CredentialResponse) => {}
+  const handleGoogleLogin = useCallback((cred: CredentialResponse) => {},[])
 
   return (
     <GoogleLogin onSuccess={(cred) => console.log(cred)} />
