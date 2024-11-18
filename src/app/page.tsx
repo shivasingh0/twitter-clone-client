@@ -1,4 +1,5 @@
 import FeedCard from "@/components/FeedCard";
+import GoogleLoginButton from "@/components/GoogleLoginButton";
 import React from "react";
 import { BiHash, BiHome, BiMoney, BiUser } from "react-icons/bi";
 import { BsBell, BsBookmark, BsEnvelope, BsTwitterX } from "react-icons/bs";
@@ -82,7 +83,12 @@ export default function Home() {
           <FeedCard />
           <FeedCard />
         </div>
-        <div className="col-span-3"></div>
+        <div className="col-span-3 p-5">
+          <div className="bg-[#181818] w-fit p-4 rounded-lg">
+            <h1 className="text-xl font-bold text-center">New to Twitter?</h1>
+          <GoogleLoginButton />
+          </div>
+        </div>
       </div>
     </section>
   );
