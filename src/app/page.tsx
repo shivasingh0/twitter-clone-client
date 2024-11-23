@@ -46,7 +46,8 @@ const sidebarItems: TwitterSidebarButton[] = [
 ];
 
 export default function Home() {
-  return (
+
+  return ( 
     <section className="w-full h-screen">
       <div className="grid px-14 grid-cols-12">
         <div className="col-span-3 pt-2">
